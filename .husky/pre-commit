@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx lint-staged
+echo '🏗️👷 Styling & checking your changes before committing👷‍♂️🏗️'
+
+npx lint-staged --config .lintstagedrc.json
